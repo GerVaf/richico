@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.main-title {
+  @apply sm:text-[60px] text-[30px] font-semibold mb-8;
+}
+.deco {
+  opacity: 0.5;
+  background-image: linear-gradient(rgb(167, 0, 0) 1px, transparent 1px),
+    linear-gradient(to right, rgb(167, 0, 0) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+.info-deco {
+  opacity: 1;
+  --s: 330px;
+  --_g: radial-gradient(rgb(255, 255, 255) 45%, #0000 46%);
+  --_l: radial-gradient(rgb(167, 0, 0) 15%, #0000 16%);
+  background: var(--_l), var(--_l), var(--_g), var(--_g);
+  background-position: 0 0, var(--s) var(--s);
+  background-size: calc(2 * var(--s)) calc(2 * var(--s));
+  animation: x 2s cubic-bezier(0.5, 92, 0.5, -92) infinite,
+    y 2s cubic-bezier(0.5, 92, 0.5, -92) infinite -0.5s;
+}
+
+@keyframes x {
+  to {
+    background-position-x: 1px, calc(var(--s) - 1px), 0, var(--s);
+  }
+}
+@keyframes y {
+  to {
+    background-position-y: 1px, calc(var(--s) - 1px), 0, var(--s);
+  }
+}
+
+/* Scrollbar for WebKit-based browsers */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+  height: 10px; /* Height of the scrollbar (for horizontal scrollbars) */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background color of the scrollbar track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar handle */
+  border-radius: 10px; /* Rounded corners for the handle */
+  border: 2px solid #f1f1f1; /* Adds padding around the handle */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker handle on hover */
+}
+
+/* File: index.css */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb, #a70000);
+  border-radius: 10px;
+}
+
+.bg-decoration {
+  background: rgba(229, 229, 229, 0.75);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.375);
+}

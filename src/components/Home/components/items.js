@@ -1,0 +1,177 @@
+// src/data/items.js
+const items = [
+  {
+    id: 1,
+    title: "Sunset Linen Dress",
+    brand: "Aurora",
+    price: 49.99,
+    currency: "USD",
+    available: true,
+    image:
+      "https://i.pinimg.com/1200x/9f/54/ef/9f54efa5764fcbad54a691ff08710551.jpg",
+    description: "Lightweight linen dress perfect for summer evenings.",
+    rating: 4.5,
+    category: "Dresses",
+  },
+  {
+    id: 2,
+    title: "Curvy Chic Blush Dress",
+    brand: "CurvyChic",
+    price: 59.99,
+    currency: "USD",
+    available: true,
+    image:
+      "https://i.pinimg.com/1200x/59/ea/0a/59ea0a97fcc6b2a711891a30c758ee0b.jpg",
+    description:
+      "Flattering plus-size trumpet-sleeve dress in soft blush tone.",
+    rating: 4.7,
+    category: "Dresses",
+  },
+  {
+    id: 3,
+    title: "Professional Blazer & Trousers",
+    brand: "OfficeElite",
+    price: 129.99,
+    currency: "USD",
+    available: true,
+    image:
+      "https://i.pinimg.com/736x/33/96/71/339671cbcf15fc124908de9b42b0a6c4.jpg",
+    description:
+      "Tailored blazer and trousers set—perfect for the modern workplace.",
+    rating: 4.3,
+    category: "Suits",
+  },
+  {
+    id: 4,
+    title: "Cozy Plaid Shacket",
+    brand: "FallVibes",
+    price: 79.99,
+    currency: "USD",
+    available: true,
+    image:
+      "https://i.pinimg.com/736x/ab/31/04/ab3104425a9028a6429cbe1b1e282bc4.jpg",
+    description: "Oversized plaid shirt jacket for layering in cooler months.",
+    rating: 4.6,
+    category: "Outerwear",
+  },
+  {
+    id: 5,
+    title: "Forest Green Tank Top",
+    brand: "BasicEssentials",
+    price: 24.99,
+    currency: "USD",
+    available: true,
+    image:
+      "https://i.pinimg.com/1200x/e4/8f/bc/e48fbc50606a079a42db43a1a8f12ee1.jpg",
+    description: "Simple yet stylish tank top in rich forest green.",
+    rating: 4.4,
+    category: "Tops",
+  },
+  {
+    id: 6,
+    title: "Cottagecore Prairie Dress",
+    brand: "RusticRomance",
+    price: 69.99,
+    currency: "USD",
+    available: true,
+    image:
+      "https://i.pinimg.com/1200x/90/92/a0/9092a08ca7cf5948094c173737a7cbc5.jpg",
+    description: "Soft floral prairie dress ideal for sunny strolls.",
+    rating: 4.8,
+    category: "Dresses",
+  },
+  {
+    id: 7,
+    title: "Oversized Flannel Shacket",
+    brand: "FallThreads",
+    price: 89.99,
+    currency: "USD",
+    available: true,
+    image:
+      "https://i.pinimg.com/736x/a7/08/b3/a708b386bb4b2245b924dbe63faccfbc.jpg",
+    description:
+      "Cozy and casual oversized flannel shacket with front pockets.",
+    rating: 4.5,
+    category: "Outerwear",
+  },
+  {
+    id: 8,
+    title: "Old Money Aesthetic Skirt",
+    brand: "ClassicHue",
+    price: 59.99,
+    currency: "USD",
+    available: false,
+    image:
+      "https://i.pinimg.com/1200x/5f/a7/4c/5fa74cb1d4bcd70ebcc41131bd5fb9ae.jpg",
+    description: "Elegant skirt in neutral tones for timeless looks.",
+    rating: 4.9,
+    category: "Skirts",
+  },
+  {
+    id: 9,
+    title: "Olive Green Camisole",
+    brand: "LayerUp",
+    price: 29.99,
+    currency: "USD",
+    available: true,
+    image:
+      "https://i.pinimg.com/1200x/de/d2/e6/ded2e6c3d3af69af903d1c87bcf58e50.jpg",
+    description: "Lightweight camisole for layering or solo wear.",
+    rating: 4.2,
+    category: "Tops",
+  },
+  {
+    id: 10,
+    title: "Minimalist Black Shift Dress",
+    brand: "UrbanMono",
+    price: 89.99,
+    currency: "USD",
+    available: true,
+    image:
+      "https://i.pinimg.com/1200x/da/2b/1b/da2b1bafcf60dc342a196c8dbdf36780.jpg",
+    description: "Sleek black shift dress with a minimalist silhouette.",
+    rating: 4.7,
+    category: "Dresses",
+  },
+  {
+    id: 11,
+    title: "Soft Blue Denim Jacket",
+    brand: "DenimDream",
+    price: 99.99,
+    currency: "USD",
+    available: true,
+    image:
+      "https://i.pinimg.com/736x/c1/4d/79/c14d795b00f5428fe698c731b3020eff.jpg",
+    description: "Classic denim jacket with a relaxed, worn-in feel.",
+    rating: 4.6,
+    category: "Outerwear",
+  },
+  {
+    id: 12,
+    title: "Striped Knit Sweater",
+    brand: "CozyKnits",
+    price: 54.99,
+    currency: "USD",
+    available: true,
+    image:
+      "https://i.pinimg.com/1200x/c1/33/4b/c1334b0e70a5b7907701493c9fb791f1.jpg",
+    description: "Warm striped knit sweater perfect for chilly days.",
+    rating: 4.8,
+    category: "Knitwear",
+  },
+  {
+    id: 13,
+    title: "Floral Maxi Skirt",
+    brand: "Bloom",
+    price: 39.99,
+    currency: "USD",
+    available: true,
+    image:
+      "https://i.pinimg.com/1200x/a8/e8/33/a8e833f8604d257bda5737f2c25656e5.jpg",
+    description: "Flowy maxi skirt with delicate floral pattern.",
+    rating: 4.3,
+    category: "Skirts",
+  },
+];
+
+export default items;
