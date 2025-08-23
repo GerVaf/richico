@@ -8,7 +8,6 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import Home from "../components/Home";
 import Cart from "../components/Cart";
 import History from "../components/History";
-import Product from "../components/Product";
 
 const PublicRoute = ({ element }) => element;
 
@@ -17,11 +16,6 @@ const Path = () => {
     {
       path: "/",
       element: <Home />,
-      icon: <IconHome />,
-    },
-    {
-      path: "/product/:id",
-      element: <Product />,
       icon: <IconHome />,
     },
     {
