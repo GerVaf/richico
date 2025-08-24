@@ -1,4 +1,14 @@
 // src/data/items.js
+import IMG1 from "../../../assets/photo_2025-08-24_10-35-44.jpg";
+import IMG2 from "../../../assets/photo_2025-08-24_10-35-57.jpg";
+import IMG3 from "../../../assets/photo_2025-08-24_10-36-02.jpg";
+import IMG4 from "../../../assets/photo_2025-08-24_10-36-05.jpg";
+import IMG5 from "../../../assets/photo_2025-08-24_10-36-08.jpg";
+import IMG6 from "../../../assets/photo_2025-08-24_10-36-19.jpg";
+import IMG7 from "../../../assets/photo_2025-08-24_10-36-23.jpg";
+import IMG8 from "../../../assets/photo_2025-08-24_10-36-37.jpg";
+import IMG9 from "../../../assets/photo_2025-08-24_10-36-40.jpg";
+import IMG10 from "../../../assets/photo_2025-08-24_10-37-05.jpg";
 const items = [
   {
     id: 1,
@@ -7,8 +17,7 @@ const items = [
     price: 49.99,
     currency: "USD",
     available: true,
-    image:
-      "https://i.pinimg.com/1200x/9f/54/ef/9f54efa5764fcbad54a691ff08710551.jpg",
+    image: IMG1,
     description: "Lightweight linen dress perfect for summer evenings.",
     rating: 4.5,
     category: "Dresses",
@@ -20,8 +29,7 @@ const items = [
     price: 59.99,
     currency: "USD",
     available: true,
-    image:
-      "https://i.pinimg.com/1200x/59/ea/0a/59ea0a97fcc6b2a711891a30c758ee0b.jpg",
+    image: IMG2,
     description:
       "Flattering plus-size trumpet-sleeve dress in soft blush tone.",
     rating: 4.7,
@@ -34,8 +42,7 @@ const items = [
     price: 129.99,
     currency: "USD",
     available: true,
-    image:
-      "https://i.pinimg.com/736x/33/96/71/339671cbcf15fc124908de9b42b0a6c4.jpg",
+    image: IMG3,
     description:
       "Tailored blazer and trousers set—perfect for the modern workplace.",
     rating: 4.3,
@@ -48,8 +55,7 @@ const items = [
     price: 79.99,
     currency: "USD",
     available: true,
-    image:
-      "https://i.pinimg.com/736x/ab/31/04/ab3104425a9028a6429cbe1b1e282bc4.jpg",
+    image: IMG4,
     description: "Oversized plaid shirt jacket for layering in cooler months.",
     rating: 4.6,
     category: "Outerwear",
@@ -61,8 +67,7 @@ const items = [
     price: 24.99,
     currency: "USD",
     available: true,
-    image:
-      "https://i.pinimg.com/1200x/e4/8f/bc/e48fbc50606a079a42db43a1a8f12ee1.jpg",
+    image: IMG5,
     description: "Simple yet stylish tank top in rich forest green.",
     rating: 4.4,
     category: "Tops",
@@ -74,8 +79,7 @@ const items = [
     price: 69.99,
     currency: "USD",
     available: true,
-    image:
-      "https://i.pinimg.com/1200x/90/92/a0/9092a08ca7cf5948094c173737a7cbc5.jpg",
+    image: IMG6,
     description: "Soft floral prairie dress ideal for sunny strolls.",
     rating: 4.8,
     category: "Dresses",
@@ -87,8 +91,7 @@ const items = [
     price: 89.99,
     currency: "USD",
     available: true,
-    image:
-      "https://i.pinimg.com/736x/a7/08/b3/a708b386bb4b2245b924dbe63faccfbc.jpg",
+    image: IMG7,
     description:
       "Cozy and casual oversized flannel shacket with front pockets.",
     rating: 4.5,
@@ -101,8 +104,7 @@ const items = [
     price: 59.99,
     currency: "USD",
     available: false,
-    image:
-      "https://i.pinimg.com/1200x/5f/a7/4c/5fa74cb1d4bcd70ebcc41131bd5fb9ae.jpg",
+    image: IMG8,
     description: "Elegant skirt in neutral tones for timeless looks.",
     rating: 4.9,
     category: "Skirts",
@@ -114,8 +116,7 @@ const items = [
     price: 29.99,
     currency: "USD",
     available: true,
-    image:
-      "https://i.pinimg.com/1200x/de/d2/e6/ded2e6c3d3af69af903d1c87bcf58e50.jpg",
+    image: IMG9,
     description: "Lightweight camisole for layering or solo wear.",
     rating: 4.2,
     category: "Tops",
@@ -127,50 +128,10 @@ const items = [
     price: 89.99,
     currency: "USD",
     available: true,
-    image:
-      "https://i.pinimg.com/1200x/da/2b/1b/da2b1bafcf60dc342a196c8dbdf36780.jpg",
+    image: IMG10,
     description: "Sleek black shift dress with a minimalist silhouette.",
     rating: 4.7,
     category: "Dresses",
-  },
-  {
-    id: 11,
-    title: "Soft Blue Denim Jacket",
-    brand: "DenimDream",
-    price: 99.99,
-    currency: "USD",
-    available: true,
-    image:
-      "https://i.pinimg.com/736x/c1/4d/79/c14d795b00f5428fe698c731b3020eff.jpg",
-    description: "Classic denim jacket with a relaxed, worn-in feel.",
-    rating: 4.6,
-    category: "Outerwear",
-  },
-  {
-    id: 12,
-    title: "Striped Knit Sweater",
-    brand: "CozyKnits",
-    price: 54.99,
-    currency: "USD",
-    available: true,
-    image:
-      "https://i.pinimg.com/1200x/c1/33/4b/c1334b0e70a5b7907701493c9fb791f1.jpg",
-    description: "Warm striped knit sweater perfect for chilly days.",
-    rating: 4.8,
-    category: "Knitwear",
-  },
-  {
-    id: 13,
-    title: "Floral Maxi Skirt",
-    brand: "Bloom",
-    price: 39.99,
-    currency: "USD",
-    available: true,
-    image:
-      "https://i.pinimg.com/1200x/a8/e8/33/a8e833f8604d257bda5737f2c25656e5.jpg",
-    description: "Flowy maxi skirt with delicate floral pattern.",
-    rating: 4.3,
-    category: "Skirts",
   },
 ];
 

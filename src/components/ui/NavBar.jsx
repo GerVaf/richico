@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import logo from "../../assets/logo.jpg";
 const NavBar = () => {
   return (
     <nav
@@ -12,9 +12,9 @@ const NavBar = () => {
           aria-label="Richico Home"
         >
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Richoco.png"
+            src={logo}
             alt="Store Logo"
-            className="w-14 h-14 overflow-visible rounded-full object-cover shadow-md"
+            className="w-20 h-14  rounded-full overflow-hidden object-cover shadow-md"
           />
         </Link>
         <span className="text-2xl font-semibold dark:text-gray-800 text-white tracking-wide">

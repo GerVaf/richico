@@ -31,8 +31,8 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="mailto:contact@richico.com" className="hover:underline">
-                contact@richico.com
+              <a href="mailto:rchic900@gmail.com" className="hover:underline">
+                rchic900@gmail.com
               </a>
             </li>
           </ul>
@@ -47,7 +47,8 @@ const Footer = () => {
           <a href="#" className="hover:underline">
             Richico
           </a>
-          . All Rights Reserved.
+          . All Rights Reserved. Power By{" "}
+          <a target="_blank" href="https://justlwint.com">justlwint.com</a>
         </p>
       </div>
     </footer>

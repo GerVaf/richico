@@ -31,7 +31,7 @@ const Product = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % totalSlides);
-    }, 5000); // 5s for more breathing room
+    }, 5000);
     return () => clearInterval(interval);
   }, [totalSlides]);
 
@@ -44,7 +44,7 @@ const Product = () => {
         READY TO WEAR
       </h1>
 
-      <div className="overflow-hidden w-full">
+      <div className="w-full">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentSlide}
@@ -52,7 +52,6 @@ const Product = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            // Grid matches itemsPerSlide dynamically
             className={`grid gap-6 ${
               itemsPerSlide === 1
                 ? "grid-cols-1"
@@ -76,37 +75,48 @@ const Product = () => {
                     className="w-full h-[220px] sm:h-[260px] lg:h-[320px] xl:h-[360px] object-cover transition-transform duration-500 hover:scale-105"
                   />
                 </div>
-                <h2 className="text-base sm:text-lg font-semibold mt-3 truncate">
-                  {item.title}
-                </h2>
-                <p className="text-gray-600 text-sm sm:text-base">
-                  {item.price.toFixed(2)} Kyats
-                </p>
               </motion.div>
             ))}
           </motion.div>
         </AnimatePresence>
       </div>
 
-      {/* Pagination dots */}
-      <div className="flex justify-center mt-8 gap-3">
-        {Array.from({ length: totalSlides }).map((_, i) => (
-          <motion.button
-            key={i}
-            onClick={() => setCurrentSlide(i)}
-            whileHover={{ scale: 1.2 }}
-            className="relative rounded-full"
-            animate={{
-              width: i === currentSlide ? 28 : 12,
-              height: 12,
-              borderRadius: i === currentSlide ? 12 : "50%",
-              backgroundColor: i === currentSlide ? "#111827" : "#d1d5db",
-            }}
-            transition={{ duration: 0.35, ease: "easeInOut" }}
-          >
-            <span className="absolute inset-0 bg-white/10 rounded-full" />
-          </motion.button>
+      {/* Pagination Dots */}
+      <div className="flex justify-center mt-6 space-x-2">
+        {Array.from({ length: totalSlides }).map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              currentSlide === index ? "bg-black scale-110" : "bg-gray-400"
+            }`}
+          />
         ))}
+      </div>
+
+      {/* Why Choose RICHICO Section */}
+      <div className="mt-12 text-center max-w-3xl mx-auto">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+          Why Choose RICHICO Brand Products?
+        </h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          At <span className="font-semibold">RICHICO</span>, we believe fashion is more
+          than just clothing — it’s a statement of{" "}
+          <span className="font-semibold">individuality, confidence, and quality</span>.
+          Our products are crafted with attention to detail, using{" "}
+          <span className="font-semibold">premium materials</span> that balance durability
+          with comfort.
+        </p>
+        <ul className="text-gray-700 space-y-2 mb-4 text-left mx-auto w-fit">
+          <li>✔ <span className="font-semibold">Unique Style</span> – Bold, modern, and refined designs.</li>
+          <li>✔ <span className="font-semibold">Premium Quality</span> – Long-lasting and durable.</li>
+          <li>✔ <span className="font-semibold">Versatile Wear</span> – Perfect for any occasion.</li>
+          <li>✔ <span className="font-semibold">Customer First</span> – Designed with your lifestyle in mind.</li>
+        </ul>
+        <p className="text-gray-700">
+          Choosing <span className="font-semibold">RICHICO</span> means joining a brand
+          that values <span className="font-semibold">style, trust, and authenticity</span>.
+        </p>
       </div>
     </div>
   );

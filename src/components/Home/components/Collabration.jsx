@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 // src/components/Collaboration.jsx
 import { motion } from "framer-motion";
-
+import JUSTLWINT from "../../../assets/justlwint.jpg";
 const imagesCol1 = [
-  "https://i.pinimg.com/736x/bc/ab/1f/bcab1f40fceec9c51d42bfad73173422.jpg",
+  JUSTLWINT,
   "https://i.pinimg.com/1200x/e7/03/7b/e7037b4f23d40cbb0f8ffa51e2421aea.jpg",
   "https://i.pinimg.com/1200x/91/7b/f7/917bf7ba6f969a2d7a16f1a3d5f7dd00.jpg",
   "https://i.pinimg.com/1200x/f5/72/82/f572827c89417511b731d11f958942f7.jpg",
