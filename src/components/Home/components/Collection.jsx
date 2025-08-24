@@ -1,5 +1,6 @@
 import { CaretDoubleRight } from "phosphor-react";
-
+import IMG1 from "../../../assets/photo_2025-08-24_10-36-02.jpg";
+import IMG2 from "../../../assets/photo_2025-08-24_10-35-57.jpg";
 const Collection = () => {
   return (
     <div className="grid grid-cols-1 xl:grid-cols-5 gap-5">
@@ -7,7 +8,7 @@ const Collection = () => {
       <div className="col-span-1 xl:col-span-2">
         <img
           className="object-cover rounded shadow w-full h-full"
-          src="https://i.pinimg.com/1200x/1f/76/54/1f765441502051e5f11aeaab30ae175e.jpg"
+          src={IMG1}
           alt=""
         />
       </div>
@@ -24,7 +25,7 @@ const Collection = () => {
         <div className="h-[50vh] self-end w-full xl:w-auto">
           <img
             className="object-cover object-top rounded shadow w-full h-full"
-            src="https://i.pinimg.com/1200x/59/9d/4d/599d4dacfae9075b0261428f367ddf58.jpg"
+            src={IMG2}
             alt=""
           />
         </div>
